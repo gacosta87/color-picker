@@ -33,17 +33,6 @@ export default class Panel extends React.Component {
     this.props.onMount(this.ref);
   }
 
-  componentDidUpdate() {
-    const color = newColor(props.color);
-    if ((color.blueValue !== this.state.color.blueValue)
-      || (color.greenValue !== this.state.color.greenValue)
-      || (color.redValue !== this.state.color.redValue)
-      || (color.alphaValue !== this.state.color.alphaValue)
-    ) {
-      this.setState({ color });
-    }
-  }
-
   componentWillReceiveProps(nextProps) {
     if (nextProps.color) {
       const color = new Color(nextProps.color);
@@ -55,6 +44,18 @@ export default class Panel extends React.Component {
       this.setState({
         alpha: nextProps.alpha,
       });
+    }
+  }
+
+  componentDidUpdate() {
+    const color = new Color(this.props.color);
+    if ((color.blueValue !== this.state.color.blueValue)
+      || (color.greenValue !== this.state.color.greenValue)
+      || (color.redValue !== this.state.color.redValue)
+      || (color.alphaValue !== this.state.color.alphaValue)
+    ) {
+      // eslint-disable react/no-did-update-set-state
+      this.setState({ color });
     }
   }
 
