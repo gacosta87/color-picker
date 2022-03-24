@@ -48,7 +48,7 @@ export default class Panel extends React.Component {
   }
 
   componentDidUpdate() {
-    const color = new Color(this.props.color);
+    const color = new Color(this.props.defaultColor);
     if ((color.blueValue !== this.state.color.blueValue)
       || (color.greenValue !== this.state.color.greenValue)
       || (color.redValue !== this.state.color.redValue)
