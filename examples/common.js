@@ -37740,11 +37740,6 @@
 	            mode: this.props.mode,
 	            enableAlpha: this.props.enableAlpha
 	          })
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: prefixCls + '-watches' },
-	          _react2.default.createElement(Swatches, null)
 	        )
 	      )
 	    );
