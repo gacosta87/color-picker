@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>anim.js - example - rc-color-picker-corbin@1.2.8</title>
+  <title>anim.js - example - rc-color-picker-corbin@1.2.9</title>
   <meta name="viewport"
         content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
   <meta charset="utf-8"/>
@@ -257,24 +257,22 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
     document.writeln('<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"'+'>'+'<'+'/'+'script>');
   }
   </script>
-  
+  <link rel="stylesheet" href="common.css" />
 </head>
 
 <body>
   <div class="container">
     <div class="header">
-      <h1>rc-color-picker-corbin@1.2.8</h1>
+      <h1>rc-color-picker-corbin@1.2.9</h1>
 
       <p>color-picker ui component for react</p>
     </div>
     <div class="example" id="__react-content"></div>
 
-    <div class="highlight"><pre><code language="js">
-
-<span class="hljs-keyword">import</span> <span class="hljs-string">'rc-color-picker/assets/index.less'</span>;
+    <div class="highlight"><pre><code language="js"><span class="hljs-keyword">import</span> <span class="hljs-string">'rc-color-picker-corbin/assets/index.css'</span>;
 <span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
 <span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">'react-dom'</span>;
-<span class="hljs-keyword">import</span> ColorPicker <span class="hljs-keyword">from</span> <span class="hljs-string">'rc-color-picker'</span>;
+<span class="hljs-keyword">import</span> ColorPicker <span class="hljs-keyword">from</span> <span class="hljs-string">'rc-color-picker-corbin'</span>;
 
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">changeHandler</span>(<span class="hljs-params">colors</span>) </span>{
   <span class="hljs-built_in">console</span>.log(colors);
@@ -286,6 +284,7 @@ ReactDOM.render(
       <span class="hljs-attribute">animation</span>=<span class="hljs-value">"slide-up"</span>
       <span class="hljs-attribute">color</span>=<span class="hljs-value">{'#36c'}</span>
       <span class="hljs-attribute">onChange</span>=<span class="hljs-value">{changeHandler}</span>
+      <span class="hljs-attribute">swatch</span>
     /&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>,
   document.getElementById('__react-content')
