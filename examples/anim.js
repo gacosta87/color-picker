@@ -37,8 +37,7 @@ webpackJsonp([0],[
 	  _react2.default.createElement(_rcColorPickerCorbin2.default, {
 	    animation: 'slide-up',
 	    color: '#36c',
-	    onChange: changeHandler,
-	    swatch: true
+	    onChange: changeHandler
 	  })
 	), document.getElementById('__react-content'));
 

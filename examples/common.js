@@ -29223,8 +29223,6 @@
 	
 	    var _this = _possibleConstructorReturn(this, _React$Component.call(this, props));
 	
-	    _this._panelRef = null;
-	
 	    var alpha = typeof props.alpha === 'undefined' ? props.defaultAlpha : Math.min(props.alpha, props.defaultAlpha);
 	
 	    _this.state = {
@@ -29316,13 +29314,8 @@
 	  };
 	
 	  ColorPicker.prototype.getPickerElement = function getPickerElement() {
-	    var _this4 = this;
-	
 	    // const state = this.state;
 	    return _react2.default.createElement(_Panel2.default, {
-	      ref: function ref(_ref) {
-	        _this4._panelRef = _ref;
-	      },
 	      onMount: this.onPanelMount,
 	      defaultColor: this.state.color,
 	      swatchColor: this.props.swatchColor,
@@ -37634,8 +37627,8 @@
 	  };
 	
 	  Panel.prototype.componentWillReceiveProps = function componentWillReceiveProps(nextProps) {
-	    if (nextProps.swatch !== this.props.swatch) {
-	      var swatchColor = new _color2.default(nextProps.swatch);
+	    if (nextProps.swatchColor !== this.props.swatchColor) {
+	      var swatchColor = new _color2.default(nextProps.swatchColor);
 	      this.setState({
 	        color: swatchColor,
 	        alpha: swatchColor.alpha
