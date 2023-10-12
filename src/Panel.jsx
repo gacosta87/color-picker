@@ -34,10 +34,10 @@ export default class Panel extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    if (nextProps.color) {
-      const color = new Color(nextProps.color);
+    if (nextProps.swatchColor && nextProps.swatchColor !== this.props.swatchColor) {
+      const color = new Color(nextProps.swatchColor);
       this.setState({
-        color,
+        color
       });
     }
     if (nextProps.alpha !== undefined) {
@@ -178,6 +178,7 @@ Panel.propTypes = {
   alpha: PropTypes.number,
   className: PropTypes.string,
   color: typeColor, // Hex string
+  swatchColor: typeColor,
   defaultAlpha: PropTypes.number,
   defaultColor: typeColor, // Hex string
   enableAlpha: PropTypes.bool,
@@ -202,4 +203,5 @@ Panel.defaultProps = {
   onMount: noop,
   prefixCls: 'rc-color-picker-panel',
   style: {},
+  swatchColor: '#ff0000',
 };

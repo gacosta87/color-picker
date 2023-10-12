@@ -14,7 +14,6 @@ function refFn(field, component) {
 function prevent(e) {
   e.preventDefault();
 }
-
 export default class ColorPicker extends React.Component {
   constructor(props) {
     super(props);
@@ -130,6 +129,7 @@ export default class ColorPicker extends React.Component {
       <ColorPickerPanel
         onMount={this.onPanelMount}
         defaultColor={this.state.color}
+        swatchColor={this.props.swatchColor}
         alpha={this.state.alpha}
         enableAlpha={this.props.enableAlpha}
         prefixCls={`${this.props.prefixCls}-panel`}
@@ -225,6 +225,7 @@ ColorPicker.propTypes = {
   children: PropTypes.node.isRequired,
   className: PropTypes.string,
   color: PropTypes.string,
+  swatchColor: PropTypes.string,
   enableAlpha: PropTypes.bool,
   mode: PropTypes.oneOf(['RGB', 'HSL', 'HSB']),
   onChange: PropTypes.func,
