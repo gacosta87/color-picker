@@ -1,31 +1,30 @@
-webpackJsonp([1],{
-
-/***/ 0:
+webpackJsonp([1,4],[
+/* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(155);
+	module.exports = __webpack_require__(2);
 
 
 /***/ }),
-
-/***/ 155:
+/* 1 */,
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	__webpack_require__(2);
+	__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"rc-color-picker/assets/index.less\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 	
-	var _react = __webpack_require__(3);
+	var _react = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"react\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactDom = __webpack_require__(11);
+	var _reactDom = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"react-dom\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 	
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 	
-	var _rcColorPickerCorbin = __webpack_require__(20);
+	var _rcColorPicker = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"rc-color-picker\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 	
-	var _rcColorPickerCorbin2 = _interopRequireDefault(_rcColorPickerCorbin);
+	var _rcColorPicker2 = _interopRequireDefault(_rcColorPicker);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -37,7 +36,7 @@ webpackJsonp([1],{
 	  'div',
 	  { style: { textAlign: 'center' } },
 	  _react2.default.createElement(
-	    _rcColorPickerCorbin2.default,
+	    _rcColorPicker2.default,
 	    {
 	      color: '#36c',
 	      onChange: changeHandler
@@ -51,6 +50,5 @@ webpackJsonp([1],{
 	), document.getElementById('__react-content'));
 
 /***/ })
-
-});
+]);
 //# sourceMappingURL=custom-trigger.js.map
