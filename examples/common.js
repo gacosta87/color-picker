@@ -37819,13 +37819,15 @@
 	  onFocus: _propTypes2.default.func,
 	  onMount: _propTypes2.default.func,
 	  prefixCls: _propTypes2.default.string,
-	  style: _propTypes2.default.object
+	  style: _propTypes2.default.object,
+	  swatchColor: _validationColor2.default
 	};
 	
 	Panel.defaultProps = {
 	  className: '',
 	  defaultAlpha: 100,
 	  defaultColor: '#ff0000',
+	  swatchColor: '#ff0000',
 	  enableAlpha: true,
 	  mode: 'RGB',
 	  onBlur: noop,
