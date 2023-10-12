@@ -37634,13 +37634,13 @@
 	        alpha: swatchColor.alpha
 	      });
 	    } else {
-	      if (nextProps.color) {
-	        var color = new _color2.default(nextProps.color);
-	        this.setState({
-	          color: color
-	        });
-	      }
-	      if (nextProps.alpha !== undefined) {
+	      // if (nextProps.color !== undefined) {
+	      //   const color = new Color(nextProps.color);
+	      //   this.setState({
+	      //     color,
+	      //   });
+	      // }
+	      if (nextProps.alpha) {
 	        this.setState({
 	          alpha: nextProps.alpha
 	        });
