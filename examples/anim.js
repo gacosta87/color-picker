@@ -1,4 +1,4 @@
-webpackJsonp([0,4],[
+webpackJsonp([0],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -13,11 +13,11 @@ webpackJsonp([0,4],[
 	
 	__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"rc-color-picker/assets/index.less\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 	
-	var _react = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"react\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	var _react = __webpack_require__(2);
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactDom = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"react-dom\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	var _reactDom = __webpack_require__(7);
 	
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 	

@@ -1,24 +1,25 @@
-webpackJsonp([1,4],[
-/* 0 */
+webpackJsonp([1],{
+
+/***/ 0:
 /***/ (function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(2);
+	module.exports = __webpack_require__(15);
 
 
 /***/ }),
-/* 1 */,
-/* 2 */
+
+/***/ 15:
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
 	__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"rc-color-picker/assets/index.less\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 	
-	var _react = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"react\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	var _react = __webpack_require__(2);
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactDom = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"react-dom\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	var _reactDom = __webpack_require__(7);
 	
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 	
@@ -50,5 +51,6 @@ webpackJsonp([1,4],[
 	), document.getElementById('__react-content'));
 
 /***/ })
-]);
+
+});
 //# sourceMappingURL=custom-trigger.js.map
