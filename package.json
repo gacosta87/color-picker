@@ -1,6 +1,6 @@
 {
-  "name": "rc-color-picker",
-  "version": "1.2.18",
+  "name": "rc-color-picker-corbin",
+  "version": "1.2.20",
   "description": "color-picker ui component for react",
   "main": "./lib/index.js",
   "keywords": [
@@ -58,11 +58,13 @@
     "prop-types": "^15.5.8",
     "rc-trigger": "1.x",
     "rc-util": "^4.0.2",
+    "react": "^17.0.2",
+    "react-dom": "^18.2.0",
     "tinycolor2": "^1.4.1"
   },
   "peerDependencies": {
-    "react": "16.x",
-    "react-dom": "16.x"
+    "react": "17.x",
+    "react-dom": "17.x"
   },
   "pre-commit": [
     "lint"
