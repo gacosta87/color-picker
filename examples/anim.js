@@ -11,19 +11,19 @@ webpackJsonp([0],[
 
 	'use strict';
 	
-	__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"rc-color-picker/assets/index.less\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	__webpack_require__(2);
 	
-	var _react = __webpack_require__(2);
+	var _react = __webpack_require__(3);
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactDom = __webpack_require__(7);
+	var _reactDom = __webpack_require__(8);
 	
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 	
-	var _rcColorPicker = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"rc-color-picker\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	var _rcColorPickerCorbin = __webpack_require__(17);
 	
-	var _rcColorPicker2 = _interopRequireDefault(_rcColorPicker);
+	var _rcColorPickerCorbin2 = _interopRequireDefault(_rcColorPickerCorbin);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -34,7 +34,7 @@ webpackJsonp([0],[
 	_reactDom2.default.render(_react2.default.createElement(
 	  'div',
 	  { style: { margin: '20px 20px 20px', textAlign: 'center' } },
-	  _react2.default.createElement(_rcColorPicker2.default, {
+	  _react2.default.createElement(_rcColorPickerCorbin2.default, {
 	    animation: 'slide-up',
 	    color: '#36c',
 	    onChange: changeHandler
