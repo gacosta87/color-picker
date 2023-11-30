@@ -1,7 +1,7 @@
-import 'rc-color-picker/assets/index.less';
+import 'rc-color-picker-corbin/assets/index.less';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ColorPicker from 'rc-color-picker';
+import ColorPicker from 'rc-color-picker-corbin';
 
 function changeHandler(colors) {
   console.log(colors);
